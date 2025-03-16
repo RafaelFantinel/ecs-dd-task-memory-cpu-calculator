@@ -29,7 +29,7 @@ jobs:
           title: 'Dashboard'
           output:
             format: html
-            filename: 'out/dashboard.html'
+            filename: 'out/index.html'
           sections:
           - title: 'Open Issues by Type'
             description: 'Queries of issues by type, using their label.'
