@@ -1,8 +1,9 @@
 name: Build Dashboard
 
 on:
-  schedule:
-  - cron: '* * * * *'
+  push:
+    branches:
+      - 'main'
 
 jobs:
   build:
