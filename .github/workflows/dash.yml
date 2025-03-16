@@ -36,19 +36,19 @@ jobs:
             widgets:
             - type: 'number'
               title: 'Docs'
-              issue_query: 'repo:libgit2/libgit2 is:open is:issue label:documentation'
+              issue_query: 'repo:RafaelFantinel/ecs-dd-task-memory-cpu-calculator is:open is:issue label:documentation'
               color: 'red'
             - type: 'number'
               title: 'Feature'
-              issue_query: 'repo:libgit2/libgit2 is:open is:issue label:feature'
+              issue_query: 'repo:RafaelFantinel/ecs-dd-task-memory-cpu-calculator is:open is:issue label:feature'
               color: 'green'
             - type: 'number'
               title: 'Up for Grabs'
-              issue_query: 'repo:libgit2/libgit2 is:open is:issue label:"up for grabs"'
+              issue_query: 'repo:RafaelFantinel/ecs-dd-task-memory-cpu-calculator is:open is:issue label:"up for grabs"'
               color: 'blue'
             - type: 'number'
               title: 'Easy Fix'
-              issue_query: 'repo:libgit2/libgit2 is:open is:issue label:"easy fix"'
+              issue_query: 'repo:RafaelFantinel/ecs-dd-task-memory-cpu-calculator is:open is:issue label:"easy fix"'
               color: 'blue'
 
           
