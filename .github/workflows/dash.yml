@@ -22,7 +22,7 @@ jobs:
         ref: 'gh-pages'
         path: 'out'
 
-    - name: 'Generate Dashboard'
+    - name: Generate Dashboard
       uses: ethomson/issue-dashboard@v1
       with:
         config: |
@@ -51,8 +51,13 @@ jobs:
               issue_query: 'repo:RafaelFantinel/ecs-dd-task-memory-cpu-calculator is:open is:issue label:"easy fix"'
               color: 'blue'
 
-          
         token: ${{ github.token }}
+
+    - name: Download CSS and JS files
+      run: |
+        curl -O https://cdn.jsdelivr.net/npm/issue-dashboard@1.0.0/dist/dashboard.css
+        curl -O https://cdn.jsdelivr.net/npm/issue-dashboard@1.0.0/dist/dashboard.js
+      working-directory: out
 
     - name: Publish Documentation
       run: |
